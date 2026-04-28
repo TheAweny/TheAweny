@@ -1,0 +1,339 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#020202"/>
+    <stop offset="35%"  stop-color="#110101"/>
+    <stop offset="65%"  stop-color="#110101"/>
+    <stop offset="100%" stop-color="#020202"/>
+  </linearGradient>
+  <linearGradient id="vglow" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#8b0000" stop-opacity="0"/>
+    <stop offset="50%"  stop-color="#8b0000" stop-opacity="0.08"/>
+    <stop offset="100%" stop-color="#8b0000" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#8b0000" stop-opacity="0"/>
+    <stop offset="18%"  stop-color="#c0392b"/>
+    <stop offset="52%"  stop-color="#f5f5f5"/>
+    <stop offset="78%"  stop-color="#c0392b"/>
+    <stop offset="100%" stop-color="#8b0000" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="blade-edge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#5a0000" stop-opacity="0"/>
+    <stop offset="20%"  stop-color="#8b0000"/>
+    <stop offset="55%"  stop-color="#c0392b"/>
+    <stop offset="80%"  stop-color="#8b0000"/>
+    <stop offset="100%" stop-color="#5a0000" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="moon-fill" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#4a0000"/>
+    <stop offset="70%"  stop-color="#2a0000"/>
+    <stop offset="100%" stop-color="#150000"/>
+  </radialGradient>
+  <filter id="f-glow-lg" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="f-glow-sm" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="f-moon" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="f-blade" x="-10%" y="-200%" width="120%" height="500%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<!-- ── BG ── -->
+<rect width="900" height="280" fill="url(#bg)"/>
+<rect width="900" height="280" fill="url(#vglow)"/>
+
+<!-- subtle horizontal scan lines -->
+<line x1="0" y1="60"  x2="900" y2="60"  stroke="#8b0000" stroke-width="0.25" opacity="0.18"/>
+<line x1="0" y1="140" x2="900" y2="140" stroke="#8b0000" stroke-width="0.4"  opacity="0.12"/>
+<line x1="0" y1="220" x2="900" y2="220" stroke="#8b0000" stroke-width="0.25" opacity="0.18"/>
+<line x1="0" y1="100" x2="900" y2="100" stroke="#8b0000" stroke-width="0.15" opacity="0.1"/>
+<line x1="0" y1="180" x2="900" y2="180" stroke="#8b0000" stroke-width="0.15" opacity="0.1"/>
+
+<!-- ── BLOOD MOON ── -->
+<circle cx="748" cy="72" r="90" fill="url(#moon-fill)" filter="url(#f-moon)" opacity="0.85">
+  <animate attributeName="opacity" values="0.7;0.95;0.7" dur="5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="748" cy="72" r="88" fill="none" stroke="#8b0000" stroke-width="1.5" opacity="0.35">
+  <animate attributeName="opacity" values="0.25;0.5;0.25" dur="5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="748" cy="72" r="78" fill="none" stroke="#c0392b" stroke-width="0.5" opacity="0.2"/>
+<!-- moon crater details -->
+<circle cx="730" cy="55" r="8"  fill="none" stroke="#5a0000" stroke-width="0.5" opacity="0.4"/>
+<circle cx="762" cy="88" r="5"  fill="none" stroke="#5a0000" stroke-width="0.5" opacity="0.3"/>
+<circle cx="745" cy="40" r="3"  fill="none" stroke="#5a0000" stroke-width="0.4" opacity="0.3"/>
+
+<!-- ── KATANA ── -->
+<!-- blade glow layer -->
+<rect x="70" y="195" width="760" height="6" rx="3" fill="url(#blade)" filter="url(#f-blade)" opacity="0.6">
+  <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.5s" repeatCount="indefinite"/>
+</rect>
+<!-- blade edge -->
+<rect x="70" y="197" width="760" height="2" rx="1" fill="url(#blade-edge)">
+  <animate attributeName="opacity" values="0.7;1;0.7" dur="3.5s" repeatCount="indefinite"/>
+</rect>
+<!-- blade highlight (white edge) -->
+<rect x="70" y="197.5" width="760" height="0.8" rx="0.4" fill="#ffffff" opacity="0.15"/>
+
+<!-- tsuba (guard) at x=290 -->
+<ellipse cx="292" cy="198" rx="15" ry="25" fill="#600000" opacity="0.95"/>
+<ellipse cx="292" cy="198" rx="10" ry="17" fill="#8b0000"/>
+<ellipse cx="292" cy="198" rx="5"  ry="9"  fill="#c0392b" opacity="0.9"/>
+<ellipse cx="292" cy="198" rx="2"  ry="4"  fill="#e74c3c"/>
+<!-- tsuba ring detail -->
+<ellipse cx="292" cy="198" rx="13" ry="23" fill="none" stroke="#c0392b" stroke-width="0.5" opacity="0.4"/>
+
+<!-- habaki (collar) just before tsuba -->
+<rect x="278" y="192" width="8" height="12" rx="2" fill="#7a0000" opacity="0.8"/>
+
+<!-- handle wrapping (handle at left side) -->
+<rect x="70"  y="194" width="210" height="8" rx="4" fill="#2a0000" opacity="0.9"/>
+<line x1="90"  y1="194" x2="90"  y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="110" y1="194" x2="110" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="130" y1="194" x2="130" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="150" y1="194" x2="150" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="170" y1="194" x2="170" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="190" y1="194" x2="190" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="210" y1="194" x2="210" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="230" y1="194" x2="230" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="250" y1="194" x2="250" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+<line x1="270" y1="194" x2="270" y2="202" stroke="#8b0000" stroke-width="0.8" opacity="0.5"/>
+
+<!-- kissaki (blade tip) point -->
+<polygon points="830,194 830,202 850,198" fill="#f5f5f5" opacity="0.7"/>
+
+<!-- ── TITLE: TheAweny ── -->
+<!-- glow/halo layer -->
+<text x="450" y="112"
+  text-anchor="middle"
+  font-family="Georgia, 'Times New Roman', serif"
+  font-size="74" font-weight="700"
+  fill="#c0392b" opacity="0.55"
+  filter="url(#f-glow-lg)">TheAweny
+  <animate attributeName="opacity" values="0.45;0.7;0.45" dur="3s" repeatCount="indefinite"/>
+</text>
+<!-- crisp top layer -->
+<text x="450" y="112"
+  text-anchor="middle"
+  font-family="Georgia, 'Times New Roman', serif"
+  font-size="74" font-weight="700"
+  fill="#e74c3c">TheAweny
+  <animate attributeName="fill" values="#e74c3c;#ff6b6b;#e74c3c" dur="3s" repeatCount="indefinite"/>
+</text>
+
+<!-- ── SUBTITLE ── -->
+<text x="450" y="148"
+  text-anchor="middle"
+  font-family="'Courier New', Courier, monospace"
+  font-size="13" font-weight="400"
+  fill="#777777" letter-spacing="6">FULL-STACK DEVELOPER
+</text>
+
+<!-- subtitle underline -->
+<line x1="310" y1="155" x2="590" y2="155" stroke="#8b0000" stroke-width="0.6" opacity="0.5"/>
+<circle cx="310" cy="155" r="2" fill="#c0392b" opacity="0.6"/>
+<circle cx="590" cy="155" r="2" fill="#c0392b" opacity="0.6"/>
+
+<!-- ── BOTTOM INFO ── -->
+<text x="450" y="248"
+  text-anchor="middle"
+  font-family="'Courier New', Courier, monospace"
+  font-size="10"
+  fill="#444444" letter-spacing="2.5">he / him  ·  Arch Linux + Hyprland  ·  NestJS  ·  TypeScript  ·  Python
+</text>
+
+<!-- ── CORNER BRACKETS (decorative) ── -->
+<!-- top-left -->
+<path d="M15,15 L15,40 M15,15 L40,15" fill="none" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
+<!-- top-right -->
+<path d="M885,15 L885,40 M885,15 L860,15" fill="none" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
+<!-- bottom-left -->
+<path d="M15,265 L15,240 M15,265 L40,265" fill="none" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
+<!-- bottom-right -->
+<path d="M885,265 L885,240 M885,265 L860,265" fill="none" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
+
+<!-- ── SAKURA PETALS ── -->
+<!-- Petal shape: 5 ellipses around center, animated via SMIL translate+rotate -->
+
+<!-- Petal 1 -->
+<g opacity="0">
+  <ellipse rx="4" ry="7" fill="#ff9aac" transform="rotate(0)"/>
+  <ellipse rx="4" ry="7" fill="#ffb3be" transform="rotate(72)"/>
+  <ellipse rx="4" ry="7" fill="#ff9aac" transform="rotate(144)"/>
+  <ellipse rx="4" ry="7" fill="#ffb3be" transform="rotate(216)"/>
+  <ellipse rx="4" ry="7" fill="#ff9aac" transform="rotate(288)"/>
+  <circle r="2" fill="#ffe0e5"/>
+  <animateTransform attributeName="transform" type="translate" from="55 -10" to="90 290" dur="10s" begin="0s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.06;0.9;1" dur="10s" begin="0s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 2 -->
+<g opacity="0">
+  <ellipse rx="5" ry="8" fill="#ff8fa3" transform="rotate(20)"/>
+  <ellipse rx="5" ry="8" fill="#ffaab7" transform="rotate(92)"/>
+  <ellipse rx="5" ry="8" fill="#ff8fa3" transform="rotate(164)"/>
+  <ellipse rx="5" ry="8" fill="#ffaab7" transform="rotate(236)"/>
+  <ellipse rx="5" ry="8" fill="#ff8fa3" transform="rotate(308)"/>
+  <circle r="2.5" fill="#ffe0e5"/>
+  <animateTransform attributeName="transform" type="translate" from="180 -15" to="205 290" dur="8s" begin="-3s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.07;0.88;1" dur="8s" begin="-3s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 3 – small -->
+<g opacity="0">
+  <ellipse rx="3" ry="5" fill="#ffc2cc" transform="rotate(10)"/>
+  <ellipse rx="3" ry="5" fill="#ffdde2" transform="rotate(82)"/>
+  <ellipse rx="3" ry="5" fill="#ffc2cc" transform="rotate(154)"/>
+  <ellipse rx="3" ry="5" fill="#ffdde2" transform="rotate(226)"/>
+  <ellipse rx="3" ry="5" fill="#ffc2cc" transform="rotate(298)"/>
+  <circle r="1.5" fill="#fff0f2"/>
+  <animateTransform attributeName="transform" type="translate" from="310 -8" to="280 290" dur="11s" begin="-5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.75;0.75;0" keyTimes="0;0.05;0.92;1" dur="11s" begin="-5s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 4 -->
+<g opacity="0">
+  <ellipse rx="4.5" ry="7.5" fill="#ff9aac" transform="rotate(35)"/>
+  <ellipse rx="4.5" ry="7.5" fill="#ffb8c4" transform="rotate(107)"/>
+  <ellipse rx="4.5" ry="7.5" fill="#ff9aac" transform="rotate(179)"/>
+  <ellipse rx="4.5" ry="7.5" fill="#ffb8c4" transform="rotate(251)"/>
+  <ellipse rx="4.5" ry="7.5" fill="#ff9aac" transform="rotate(323)"/>
+  <circle r="2" fill="#ffe8ec"/>
+  <animateTransform attributeName="transform" type="translate" from="420 -12" to="395 290" dur="9s" begin="-1.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.06;0.91;1" dur="9s" begin="-1.5s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 5 – large -->
+<g opacity="0">
+  <ellipse rx="6" ry="9" fill="#ff8096" transform="rotate(50)"/>
+  <ellipse rx="6" ry="9" fill="#ffaabc" transform="rotate(122)"/>
+  <ellipse rx="6" ry="9" fill="#ff8096" transform="rotate(194)"/>
+  <ellipse rx="6" ry="9" fill="#ffaabc" transform="rotate(266)"/>
+  <ellipse rx="6" ry="9" fill="#ff8096" transform="rotate(338)"/>
+  <circle r="3" fill="#ffd8df"/>
+  <animateTransform attributeName="transform" type="translate" from="555 -18" to="575 290" dur="12s" begin="-7s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.88;0.88;0" keyTimes="0;0.05;0.9;1" dur="12s" begin="-7s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 6 -->
+<g opacity="0">
+  <ellipse rx="4" ry="6.5" fill="#ffb3bf" transform="rotate(15)"/>
+  <ellipse rx="4" ry="6.5" fill="#ffc9d2" transform="rotate(87)"/>
+  <ellipse rx="4" ry="6.5" fill="#ffb3bf" transform="rotate(159)"/>
+  <ellipse rx="4" ry="6.5" fill="#ffc9d2" transform="rotate(231)"/>
+  <ellipse rx="4" ry="6.5" fill="#ffb3bf" transform="rotate(303)"/>
+  <circle r="2" fill="#ffe8ec"/>
+  <animateTransform attributeName="transform" type="translate" from="680 -10" to="660 290" dur="9.5s" begin="-2.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.82;0.82;0" keyTimes="0;0.07;0.89;1" dur="9.5s" begin="-2.5s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 7 – tiny -->
+<g opacity="0">
+  <ellipse rx="2.5" ry="4" fill="#ffd0d8" transform="rotate(5)"/>
+  <ellipse rx="2.5" ry="4" fill="#ffe0e6" transform="rotate(77)"/>
+  <ellipse rx="2.5" ry="4" fill="#ffd0d8" transform="rotate(149)"/>
+  <ellipse rx="2.5" ry="4" fill="#ffe0e6" transform="rotate(221)"/>
+  <ellipse rx="2.5" ry="4" fill="#ffd0d8" transform="rotate(293)"/>
+  <circle r="1" fill="#fff5f6"/>
+  <animateTransform attributeName="transform" type="translate" from="800 -6" to="820 290" dur="7.5s" begin="-4s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.08;0.9;1" dur="7.5s" begin="-4s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 8 -->
+<g opacity="0">
+  <ellipse rx="4" ry="7" fill="#ff8fa3" transform="rotate(60)"/>
+  <ellipse rx="4" ry="7" fill="#ffaab7" transform="rotate(132)"/>
+  <ellipse rx="4" ry="7" fill="#ff8fa3" transform="rotate(204)"/>
+  <ellipse rx="4" ry="7" fill="#ffaab7" transform="rotate(276)"/>
+  <ellipse rx="4" ry="7" fill="#ff8fa3" transform="rotate(348)"/>
+  <circle r="2" fill="#ffe0e5"/>
+  <animateTransform attributeName="transform" type="translate" from="128 -14" to="100 290" dur="13s" begin="-9s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.78;0.78;0" keyTimes="0;0.05;0.92;1" dur="13s" begin="-9s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 9 -->
+<g opacity="0">
+  <ellipse rx="5" ry="8" fill="#ff9aac" transform="rotate(40)"/>
+  <ellipse rx="5" ry="8" fill="#ffbac5" transform="rotate(112)"/>
+  <ellipse rx="5" ry="8" fill="#ff9aac" transform="rotate(184)"/>
+  <ellipse rx="5" ry="8" fill="#ffbac5" transform="rotate(256)"/>
+  <ellipse rx="5" ry="8" fill="#ff9aac" transform="rotate(328)"/>
+  <circle r="2.5" fill="#ffe8ec"/>
+  <animateTransform attributeName="transform" type="translate" from="365 -20" to="340 290" dur="10.5s" begin="-6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.06;0.91;1" dur="10.5s" begin="-6s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 10 -->
+<g opacity="0">
+  <ellipse rx="3.5" ry="6" fill="#ffb3bf" transform="rotate(25)"/>
+  <ellipse rx="3.5" ry="6" fill="#ffc8d2" transform="rotate(97)"/>
+  <ellipse rx="3.5" ry="6" fill="#ffb3bf" transform="rotate(169)"/>
+  <ellipse rx="3.5" ry="6" fill="#ffc8d2" transform="rotate(241)"/>
+  <ellipse rx="3.5" ry="6" fill="#ffb3bf" transform="rotate(313)"/>
+  <circle r="1.8" fill="#fff0f2"/>
+  <animateTransform attributeName="transform" type="translate" from="490 -9" to="510 290" dur="8.5s" begin="-4.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.07;0.9;1" dur="8.5s" begin="-4.5s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 11 – right side -->
+<g opacity="0">
+  <ellipse rx="4" ry="7" fill="#ff8096" transform="rotate(55)"/>
+  <ellipse rx="4" ry="7" fill="#ff9faf" transform="rotate(127)"/>
+  <ellipse rx="4" ry="7" fill="#ff8096" transform="rotate(199)"/>
+  <ellipse rx="4" ry="7" fill="#ff9faf" transform="rotate(271)"/>
+  <ellipse rx="4" ry="7" fill="#ff8096" transform="rotate(343)"/>
+  <circle r="2" fill="#ffdde2"/>
+  <animateTransform attributeName="transform" type="translate" from="840 -13" to="815 290" dur="11.5s" begin="-8s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.83;0.83;0" keyTimes="0;0.06;0.91;1" dur="11.5s" begin="-8s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 12 – mid-left -->
+<g opacity="0">
+  <ellipse rx="3" ry="5.5" fill="#ffc2cc" transform="rotate(45)"/>
+  <ellipse rx="3" ry="5.5" fill="#ffd5dc" transform="rotate(117)"/>
+  <ellipse rx="3" ry="5.5" fill="#ffc2cc" transform="rotate(189)"/>
+  <ellipse rx="3" ry="5.5" fill="#ffd5dc" transform="rotate(261)"/>
+  <ellipse rx="3" ry="5.5" fill="#ffc2cc" transform="rotate(333)"/>
+  <circle r="1.5" fill="#ffecef"/>
+  <animateTransform attributeName="transform" type="translate" from="237 -11" to="215 290" dur="9s" begin="-1s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.75;0.75;0" keyTimes="0;0.06;0.92;1" dur="9s" begin="-1s" repeatCount="indefinite"/>
+</g>
+
+<!-- Petal 13 – floating near blade area -->
+<g opacity="0">
+  <ellipse rx="4.5" ry="7" fill="#ff9aac" transform="rotate(70)"/>
+  <ellipse rx="4.5" ry="7" fill="#ffb3be" transform="rotate(142)"/>
+  <ellipse rx="4.5" ry="7" fill="#ff9aac" transform="rotate(214)"/>
+  <ellipse rx="4.5" ry="7" fill="#ffb3be" transform="rotate(286)"/>
+  <ellipse rx="4.5" ry="7" fill="#ff9aac" transform="rotate(358)"/>
+  <circle r="2.2" fill="#ffe0e5"/>
+  <animateTransform attributeName="transform" type="translate" from="620 -16" to="645 290" dur="10s" begin="-3.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.88;0.88;0" keyTimes="0;0.06;0.9;1" dur="10s" begin="-3.5s" repeatCount="indefinite"/>
+</g>
+
+<!-- ── BLOOD DRIPS from blade ── -->
+<g opacity="0.7">
+  <ellipse cx="450" cy="204" rx="1.5" ry="4" fill="#8b0000">
+    <animate attributeName="ry" values="0;5;4" dur="2s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.8;0.6" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="500" cy="204" rx="1.2" ry="3" fill="#8b0000">
+    <animate attributeName="ry" values="0;4;3" dur="2.5s" begin="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.7;0.5" dur="2.5s" begin="2.2s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="420" cy="204" rx="1" ry="2.5" fill="#6b0000">
+    <animate attributeName="ry" values="0;3;2" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0.4" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </ellipse>
+</g>
+
+</svg>
