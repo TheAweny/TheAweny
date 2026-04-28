@@ -167,24 +167,7 @@ const theAweny = {
 
 ---
 
-<details>
-<summary><b>$ git contributions --snake</b></summary>
 
-<br/>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TheAweny/TheAweny/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TheAweny/TheAweny/output/github-snake.svg"/>
-  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/TheAweny/TheAweny/output/github-snake-dark.svg" width="95%"/>
-</picture>
-
-</div>
-
-</details>
-
----
 
 ## `$ contact --reach-out`
 
