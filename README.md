@@ -1,40 +1,138 @@
-<img src="https://i.imgur.com/fc3KeNa.png"/>
-<br>
+<div align="center">
 
+<!-- Banner -->
+<img src="./assets/banner.png" width="100%" alt="TheAweny Banner"/>
 
-# 💻 Tech Stack:
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white) 
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) 
-![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) 
-![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
-![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) 
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
->
-![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
-![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white)
-![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white)
-![Microsoft Office](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+<!-- TYPING ANIMATION -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=C0392B&center=true&vCenter=true&random=false&width=620&lines=%E2%9A%94%EF%B8%8F+%22Those+who+don%27t+create+anything...;...can%27t+destroy+anything.%22+%E2%80%94+Akame;%F0%9F%90%A7+Arch+Linux+%7C+Hyprland+%7C+NestJS+%7C+TypeScript;%F0%9F%90%8D+Open+to+interesting+projects" alt="Typing SVG" />
+</a>
 
-***
 <br/>
 
-<h1 align="center">📄 My Stats</h1>
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=theaweny&show_icons=true&count_private=true&hide_border=true" align="center" /></div>  
-<br/>
+<img src="https://komarev.com/ghpvc/?username=TheAweny&style=for-the-badge&color=8b0000&labelColor=0a0a0a&label=PROFILE+VIEWS" alt="Profile views"/>
+&nbsp;
+<img src="https://img.shields.io/github/followers/TheAweny?style=for-the-badge&color=c0392b&labelColor=0a0a0a&label=FOLLOWERS" alt="Followers"/>
 
+</div>
 
-
-### ✍️ Random Dev Quote
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
 ---
-[![](https://visitcount.itsvg.in/api?id=TheAweny&icon=0&color=0)](https://visitcount.itsvg.in)
+
+
+### `~/whoami`
+
+```typescript
+const theAweny = {
+  name:       "Aweny",
+  pronouns:   "he/him",
+  location:   "🇷🇺 Russia",
+  role:       "Full-Stack Developer",
+  os:         "Arch Linux + Hyprland 🐧",
+  editor:     "VSCode, Zed",
+  
+  currentlyBuilding: [
+    "Judex CLI (TS: Clack, Ink)",
+    "Hotaru - Anime Streaming Service",
+    "School info system (NestJS + Prisma + PostgreSQL)",
+  ],
+  
+  learning:   ["Advanced NestJS patterns", "DevOps", "Rust (someday...)"],
+  interests:  ["Self-hosted services", "Linux ricing"],
+  waifu:      "Akame 🗡️",
+};
+```
+
+<br clear="right"/>
+
+---
+
+## ⚔️ Tech Stack
+
+<div align="center">
+
+#### 🖥️ Backend
+<img src="https://skillicons.dev/icons?i=nestjs,nodejs,python,ts,js&theme=dark"/>
+
+#### 🗄️ Databases & ORM
+<img src="https://skillicons.dev/icons?i=postgres,redis,sqlite,prisma&theme=dark"/>
+
+#### 🌐 Frontend
+<img src="https://skillicons.dev/icons?i=react,html,css,figma&theme=dark"/>
+
+#### ⚙️ Infrastructure & Tools
+<img src="https://skillicons.dev/icons?i=linux,docker,nginx,git,bash,github&theme=dark"/>
+
+#### 🛠️ Other
+<img src="https://skillicons.dev/icons?i=vscode,obsidian,photoshop,discord&theme=dark"/>
+
+</div>
+
+---
+
+## 📊 Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=TheAweny&show_icons=true&theme=transparent&title_color=c0392b&icon_color=e74c3c&text_color=dddddd&border_color=8b0000&border_radius=10&include_all_commits=true&count_private=true" width="49%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=TheAweny&theme=dark&background=00000000&ring=c0392b&fire=e74c3c&currStreakLabel=c0392b&sideLabels=dddddd&dates=888888&border=8b0000&border_radius=10" width="49%"/>
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheAweny&layout=compact&theme=transparent&title_color=c0392b&text_color=dddddd&border_color=8b0000&border_radius=10&langs_count=8" width="45%"/>
+
+</div>
+
+---
+
+## 📈 Activity
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=TheAweny&bg_color=0a0a0a&color=c0392b&line=8b0000&point=e74c3c&area=true&area_color=c0392b&border_color=8b0000&radius=10" width="95%"/>
+</div>
+
+---
+
+## 🐍 Contributions
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/TheAweny/TheAweny/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TheAweny/TheAweny/output/github-snake.svg"/>
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/TheAweny/TheAweny/output/github-snake-dark.svg"/>
+</picture>
+</div>
+
+---
+
+## 🗡️ Featured Projects
+
+<div align="center">
+
+<a href="https://github.com/TheAweny/YOUR_REPO_1">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=TheAweny&repo=judex&theme=transparent&title_color=c0392b&icon_color=e74c3c&text_color=dddddd&border_color=8b0000&border_radius=10"/>
+</a>
+&nbsp;
+<a href="https://github.com/TheAweny/YOUR_REPO_2">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=TheAweny&repo=hotaru&theme=transparent&title_color=c0392b&icon_color=e74c3c&text_color=dddddd&border_color=8b0000&border_radius=10"/>
+</a>
+
+</div>
+
+---
+
+## 📫 Contact
+
+<div align="center">
+
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0a0a0a)](https://t.me/TheAweny)
+[![GitHub](https://img.shields.io/badge/GitHub-c0392b?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a)](https://github.com/TheAweny)
+
+</div>
+
+---
+
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=12&pause=3000&color=8B0000&center=true&vCenter=true&width=540&lines=%E2%9A%94%EF%B8%8F+%22The+weak+are+destined+to+fall.+Overcome+your+weakness.%22+%E2%80%94+Akame" alt="Footer quote"/>
+
+<sub>Built with Arch Linux, NestJS, and too much coffee ☕</sub>
+</div>
